@@ -13,7 +13,7 @@
                 "-g3",
                 "${fileDirname}/*.c",
                 "-o",
-                "${fileDirname}/output/program.exe"
+                "${fileDirname}/debug/program.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"

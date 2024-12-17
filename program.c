@@ -31,7 +31,7 @@ void GetMenu(){
 
         switch(menuController){
             case 1:
-                InitCObject(12.5, &object);
+                InitCObject(12.5, &object); //Teste
                 printf("%lf\n", object.output);
                 printf("%s\n", PrintCObject(&object));
                 break;

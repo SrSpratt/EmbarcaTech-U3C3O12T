@@ -8,7 +8,7 @@
         "name": "Debug with GDB",
         "type": "cppdbg",
         "request":"launch",
-        "program": "${workspaceFolder}/output/program.exe",
+        "program": "${workspaceFolder}/debug/program.exe",
         "args": [],
         "stopAtEntry": false,
         "cwd": "${fileDirname}",

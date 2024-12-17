@@ -5,6 +5,15 @@
 * Roberto Vítor Lima Gomes Rodrigues
 
 
-#### Instruções
-Para compilar, navegue até a pasta do projeto no terminal e digite gcc *.c -o program.exe\
-Depois execute com .\program.exe
+#### Instruções de compilação
+Para compilar:
+* 1.Navegue até a pasta do projeto no terminal;
+* 2.Digite gcc *.c -o output/program.exe
+* 3.Depois execute com .\output\program.exe
+
+### Instruções de depuração
+Para debugar:
+* 1.Abra o arquivo main.c no editor; 
+* 2.Abra o menu lateral de depuração (CTRL + Shift + D);
+* 3.Selecione a opção "Debug with GDB" no dropdown;
+* 4.Por fim, clique no botão de iniciar depuração.
