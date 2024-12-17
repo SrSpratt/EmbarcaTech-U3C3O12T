@@ -6,5 +6,5 @@
 
 
 #### Instruções
-Para compilar, navegue até a pasta no terminal e digite gcc *.c -o program.exe
+Para compilar, navegue até a pasta do projeto no terminal e digite gcc *.c -o program.exe\
 Depois execute com .\program.exe
