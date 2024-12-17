@@ -1,5 +1,7 @@
 #include "program.h"
+#include "cObject.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 void GetHeader(){
     //printf("\n ______________________________\n");
@@ -25,9 +27,13 @@ void GetMenu(){
 
         scanf("%d", &menuController);
 
+        CObject object;
+
         switch(menuController){
             case 1:
-                //TODO: colocar o módulo de conversão
+                InitCObject(12.5, &object);
+                printf("%lf\n", object.output);
+                printf("%s\n", PrintCObject(&object));
                 break;
             case 2:
                 //TODO: colocar o módulo de conversão
