@@ -23,6 +23,8 @@ void GetMenu(){
         printf("\nEscolha uma opção de conversão:\n");
         printf("1. Unidades de comprimento\n");
         printf("2. Unidades de potência elétrica\n");
+        printf("3. Conversão de Celsius para Fahrenheit\n");
+        printf("4. Conversão de Celsius para Kelvin\n");
         printf("0. Sair\n");
 
         scanf("%d", &menuController);
@@ -36,9 +38,19 @@ void GetMenu(){
                 printf("%s\n", PrintCObject(&object));
                 break;
             case 2:
-                //TODO: colocar o módulo de conversão
+                //módulo de conversão
                 break;
-            //etc... outros casos
+            case 3:
+                printf("Digite o valor em Celsius: ");
+                double celsius;
+                scanf("%lf", &celsius);
+                printf("%.2lf Celsius = %.2lf Fahrenheit\n", celsius, celsiusParaFahrenheit(celsius));
+                break;
+            case 4:
+                printf("Digite o valor em Celsius: ");
+                scanf("%lf", &celsius);
+                printf("%.2lf Celsius = %.2lf Kelvin\n", celsius, celsiusParaKelvin(celsius));
+                break;
             default:
                 printf("\nSaindo...");
         }
