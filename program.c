@@ -1,15 +1,14 @@
 #include "program.h"
 #include "cObject.h"
+#include "temperaturaconverter.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 void GetHeader(){
-    //printf("\n ______________________________\n");
     printf("\n\n");
     printf(">EmbarcaTech - Primeiro Projeto\n");
     printf(">Grupo4\n");
     printf(">Subgrupo 7\n\n");
-    //printf(" ------------------------\n");
 }
 
 void GetFooter(){
@@ -17,9 +16,11 @@ void GetFooter(){
 }
 
 void GetMenu(){
-
     int menuController; //Controlador do menu
-    do{
+    double inputTemp;
+    CObject object;
+
+    do {
         printf("\nEscolha uma opção de conversão:\n");
         printf("1. Unidades de comprimento\n");
         printf("2. Unidades de potência elétrica\n");
@@ -29,8 +30,6 @@ void GetMenu(){
 
         scanf("%d", &menuController);
 
-        CObject object;
-
         switch(menuController){
             case 1:
                 InitCObject(12.5, &object); //Teste
@@ -38,21 +37,24 @@ void GetMenu(){
                 printf("%s\n", PrintCObject(&object));
                 break;
             case 2:
-                //módulo de conversão
+                //módulo de conversão de temperatura
                 break;
             case 3:
-                printf("Digite o valor em Celsius: ");
-                double celsius;
-                scanf("%lf", &celsius);
-                printf("%.2lf Celsius = %.2lf Fahrenheit\n", celsius, celsiusParaFahrenheit(celsius));
+                printf("Digite a temperatura em Celsius: ");
+                scanf("%lf", &inputTemp);
+                printf("Temperatura em Fahrenheit: %lf\n", CelsiusToFahrenheit(inputTemp));
                 break;
             case 4:
-                printf("Digite o valor em Celsius: ");
-                scanf("%lf", &celsius);
-                printf("%.2lf Celsius = %.2lf Kelvin\n", celsius, celsiusParaKelvin(celsius));
+                printf("Digite a temperatura em Celsius: ");
+                scanf("%lf", &inputTemp);
+                printf("Temperatura em Kelvin: %lf\n", CelsiusToKelvin(inputTemp));
                 break;
             default:
-                printf("\nSaindo...");
+                if (menuController != 0) {
+                    printf("\nOpção inválida, tente novamente.\n");
+                } else {
+                    printf("\nSaindo...\n");
+                }
         }
-    }while(menuController != 0);
+    } while(menuController != 0);
 }
