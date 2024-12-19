@@ -81,7 +81,7 @@ void PowerConverter() {
                 printf("%.2f HP = %.2f kW\n", inputValue, result);
                 break;
             case 7:
-                printf("Exiting the program. Goodbye!\n");
+                printf("Leaving...\n");
                 break;
             default:
                 printf("Invalid option. Please try again.\n");

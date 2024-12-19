@@ -1,6 +1,7 @@
 #include "program.h"
 #include "cObject.h"
 #include "temperaturaconverter.h"
+#include "PowerConverter.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -37,7 +38,7 @@ void GetMenu(){
                 printf("%s\n", PrintCObject(&object));
                 break;
             case 2:
-                //módulo de conversão de temperatura
+                PowerConverter();
                 break;
             case 3:
                 printf("Digite a temperatura em Celsius: ");
