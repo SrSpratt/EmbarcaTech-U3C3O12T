@@ -4,6 +4,7 @@
 #### Integrantes:
 * Roberto Vítor Lima Gomes Rodrigues
 * Marcel Mascarenhas Andrade
+* Davi Nascimento Leao
 
 
 #### Instruções de compilação
