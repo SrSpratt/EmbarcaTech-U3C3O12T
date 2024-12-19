@@ -20,3 +20,11 @@ double CObjectOutput(CObject* object){
 const char* PrintCObject(CObject* object){
     return object->subtitle;
 }
+// Funções de conversão de temperatura
+double celsiusParaFahrenheit(double celsius) {
+    return (celsius * 1.8) + 32;
+}
+
+double celsiusParaKelvin(double celsius) {
+    return celsius + 273.15;
+}

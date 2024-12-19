@@ -11,4 +11,8 @@ void InitCObject(double input, CObject* object);
 double CObjectOutput(CObject* object);
 const char* PrintCObject(CObject* object);
 
+// Declarações das funções de conversão de temperatura
+double celsiusParaFahrenheit(double celsius);
+double celsiusParaKelvin(double celsius);
+
 #endif

@@ -3,6 +3,7 @@
 #### Grupo 4 - Subgrupo 7
 #### Integrantes:
 * Roberto Vítor Lima Gomes Rodrigues
+* Marcel Mascarenhas Andrade
 
 
 #### Instruções de compilação
