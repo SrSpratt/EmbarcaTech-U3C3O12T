@@ -1,6 +1,7 @@
 #include "program.h"
 #include "cObject.h"
 #include "temperaturaconverter.h"
+#include "lenghtConverter.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -32,9 +33,10 @@ void GetMenu(){
 
         switch(menuController){
             case 1:
-                InitCObject(12.5, &object); //Teste
-                printf("%lf\n", object.output);
-                printf("%s\n", PrintCObject(&object));
+                LenghtConverter();
+                //InitCObject(12.5, &object); //Teste
+                //printf("%lf\n", object.output);
+                //printf("%s\n", PrintCObject(&object));
                 break;
             case 2:
                 //módulo de conversão de temperatura
