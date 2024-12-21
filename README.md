@@ -6,7 +6,8 @@
 * Hilquias Rodigues de Oliveira
 * Marcel Mascarenhas Andrade
 * Davi Nascimento Leao
-
+* Vinicius Santos Silva
+ 
 
 #### Instruções de compilação
 Para compilar:
