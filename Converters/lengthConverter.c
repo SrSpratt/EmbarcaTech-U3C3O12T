@@ -1,4 +1,4 @@
-#include "lenghtConverter.h"
+#include "../Libs/lengthConverter.h"
 #include <stdio.h>
 
 
@@ -14,7 +14,7 @@ float centimetroParaMilimetro(float centimetro) {
     return centimetro * 10;
 }
 
-void LenghtConverter() {
+void LengthConverter() {
     int opcao;
     float valor, resultado;
 

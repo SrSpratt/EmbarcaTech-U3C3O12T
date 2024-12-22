@@ -1,8 +1,8 @@
-#include "program.h"
-#include "cObject.h"
-#include "temperaturaconverter.h"
-#include "PowerConverter.h"
-#include "lenghtConverter.h"
+#include <program.h>
+#include <cObject.h>
+#include <temperatureConverter.h>
+#include <powerConverter.h>
+#include <lengthConverter.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -34,10 +34,7 @@ void GetMenu(){
 
         switch(menuController){
             case 1:
-                LenghtConverter();
-                //InitCObject(12.5, &object); //Teste
-                //printf("%lf\n", object.output);
-                //printf("%s\n", PrintCObject(&object));
+                LengthConverter();
                 break;
             case 2:
                 PowerConverter();
@@ -52,12 +49,12 @@ void GetMenu(){
                 scanf("%lf", &inputTemp);
                 printf("Temperatura em Kelvin: %lf\n", CelsiusToKelvin(inputTemp));
                 break;
+            case 5:
+                break;
+            case 0:
+                printf("\nSaindo...\n");
             default:
-                if (menuController != 0) {
-                    printf("\nOpção inválida, tente novamente.\n");
-                } else {
-                    printf("\nSaindo...\n");
-                }
+                printf("\nOpção inválida, tente novamente.\n");
         }
     } while(menuController != 0);
 }
