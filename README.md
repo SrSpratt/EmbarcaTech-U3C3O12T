@@ -1,7 +1,7 @@
 # EmbarcaTech-U3C3O12T
 ### Tarefa de depuração e versionamento, Unidade 3 - Capítulo 3
 #### Grupo 4 - Subgrupo 7
-#### Integrantes - teste:
+#### Integrantes:
 * Roberto Vítor Lima Gomes Rodrigues
 * Hilquias Rodigues de Oliveira
 * Marcel Mascarenhas Andrade
