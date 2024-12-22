@@ -7,6 +7,6 @@ float metroParaMilimetro(float metro);
 
 float centimetroParaMilimetro(float centimetro);
     
-void LenghtConverter();
+void LengthConverter();
 
 #endif 
