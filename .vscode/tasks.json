@@ -10,7 +10,11 @@
             "args":[
                 "-Wall",
                 "-O0",
+                "-I",
+                "${fileDirname}/Libs",
                 "-g3",
+                "${fileDirname}/Converters/*.c",
+                "${fileDirname}/Models/*.c",
                 "${fileDirname}/*.c",
                 "-o",
                 "${fileDirname}/debug/program.exe"
@@ -35,6 +39,7 @@
                 "-I",
                 "${fileDirname}/Libs",
                 "${fileDirname}/Converters/*.c",
+                "${fileDirname}/Models/*.c",
                 "${fileDirname}/*.c",
                 "-o",
                 "${fileDirname}/build/program.exe"
