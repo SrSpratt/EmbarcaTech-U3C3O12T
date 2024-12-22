@@ -2,7 +2,7 @@
 ### Tarefa de depuração e versionamento, Unidade 3 - Capítulo 3
 #### Grupo 4 - Subgrupo 7
 #### Integrantes:
-* Roberto Vítor Lima Gomes Rodrigues
+* Roberto Vítor Lima Gomes Rodrigues (SrSpratt)
 * Hilquias Rodigues de Oliveira
 * Marcel Mascarenhas Andrade
 * Davi Nascimento Leao
