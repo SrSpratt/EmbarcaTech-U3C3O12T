@@ -6,8 +6,8 @@
         {
             "label": "CompileTest",
             "type": "cppbuild",
-            "command": "C:/TDM-GCC-64/bin/gcc.exe",
-            "args":[
+            "command": "gcc",
+            "args": [
                 "-Wall",
                 "-O0",
                 "-I",
@@ -22,19 +22,19 @@
             "options": {
                 "cwd": "${fileDirname}"
             },
-            "group":{
+            "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher":[
+            "problemMatcher": [
                 "$gcc"
             ]
         },
         {
             "label": "Compile",
             "type": "cppbuild",
-            "command": "C:/TDM-GCC-64/bin/gcc.exe",
-            "args":[
+            "command": "gcc",
+            "args": [
                 "-Wall",
                 "-I",
                 "${fileDirname}/Libs",
@@ -47,11 +47,11 @@
             "options": {
                 "cwd": "${fileDirname}"
             },
-            "group":{
+            "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher":[
+            "problemMatcher": [
                 "$gcc"
             ]
         }
