@@ -5,6 +5,7 @@
 #include <lengthConverter.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <speedConverter.h>
 
 void GetHeader(){
     printf("\n\n");
@@ -20,7 +21,7 @@ void GetFooter(){
 void GetMenu(){
     int menuController; //Controlador do menu
     double inputTemp;
-    CObject object;
+    //CObject object;
 
     do {
         printf("\nEscolha uma opção de conversão:\n");
@@ -28,6 +29,7 @@ void GetMenu(){
         printf("2. Unidades de potência elétrica\n");
         printf("3. Conversão de Celsius para Fahrenheit\n");
         printf("4. Conversão de Celsius para Kelvin\n");
+        printf("6. Conversão de velocidade\n");
         printf("0. Sair\n");
 
         scanf("%d", &menuController);
@@ -50,6 +52,9 @@ void GetMenu(){
                 printf("Temperatura em Kelvin: %lf\n", CelsiusToKelvin(inputTemp));
                 break;
             case 5:
+                break;
+            case 6:
+                speedConverter();
                 break;
             case 0:
                 printf("\nSaindo...\n");
