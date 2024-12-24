@@ -6,6 +6,7 @@
 * Hilquias Rodigues de Oliveira
 * Marcel Mascarenhas Andrade
 * Davi Nascimento Leao
+* Tainah Bomfim Marques
 
 
 #### Instruções de compilação
