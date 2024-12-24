@@ -21,7 +21,7 @@ void GetFooter(){
 void GetMenu(){
     int menuController; //Controlador do menu
     double inputTemp;
-    //CObject object;
+    CObject object;
 
     do {
         printf("\nEscolha uma opção de conversão:\n");
