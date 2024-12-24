@@ -33,7 +33,7 @@
         {
             "label": "Compile",
             "type": "cppbuild",
-            "command": "C:/TDM-GCC-64/bin/gcc.exe",
+            "command": "gcc",
             "args":[
                 "-Wall",
                 "-I",
