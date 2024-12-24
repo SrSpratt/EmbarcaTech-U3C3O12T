@@ -5,6 +5,7 @@
 #include <lengthConverter.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <areaConverter.h>
 
 void GetHeader(){
     printf("\n\n");
@@ -28,6 +29,7 @@ void GetMenu(){
         printf("2. Unidades de potência elétrica\n");
         printf("3. Conversão de Celsius para Fahrenheit\n");
         printf("4. Conversão de Celsius para Kelvin\n");
+        printf("5 Conversão de área\n");
         printf("0. Sair\n");
 
         scanf("%d", &menuController);
@@ -50,6 +52,7 @@ void GetMenu(){
                 printf("Temperatura em Kelvin: %lf\n", CelsiusToKelvin(inputTemp));
                 break;
             case 5:
+                AreaConverter();
                 break;
             case 0:
                 printf("\nSaindo...\n");
