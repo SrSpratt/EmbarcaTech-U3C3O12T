@@ -6,6 +6,7 @@
 * Hilquias Rodigues de Oliveira
 * Marcel Mascarenhas Andrade
 * Davi Nascimento Leao
+* Fabrício da Silva Souza
 
 
 #### Instruções de compilação
