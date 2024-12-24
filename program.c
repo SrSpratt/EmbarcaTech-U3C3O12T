@@ -3,6 +3,8 @@
 #include <temperatureConverter.h>
 #include <powerConverter.h>
 #include <lengthConverter.h>
+#include <areaConverter.c>
+#include <areaConverter.h>
 #include <stdio.h>
 #include <stdlib.h>
 
