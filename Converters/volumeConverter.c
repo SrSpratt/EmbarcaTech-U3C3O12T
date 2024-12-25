@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void menu(){
+void menuVolume(){
 	printf("1 - Mililitro para Litro\n");
 	printf("2 - Mililitro para Hectolitro\n");
 	printf("3 - Litro para Mililitro\n");
@@ -59,13 +59,13 @@ void hlLitro(){
 	printf("%.4f hectolitros resultam em %.4f litros\n", hectolitros, litros);
 }
 
-int main(){
+int volumeConverter(){
 	int codigo = 0, desejo = 0;
 
 	printf("Seja bem-vindo ao sistema de conversão de volume! Sinta-se a vontade para utilizar uma das opções.\n");
 	
 	do{
-		menu();
+		menuVolume();
 		scanf("%d", &codigo);
 
 			switch(codigo){

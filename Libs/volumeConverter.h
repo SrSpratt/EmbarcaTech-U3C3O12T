@@ -1,7 +1,7 @@
 #ifndef VOLUMECONVERTER.H
 #define VOLUMECONVERTER.H
 
-void menu();
+void menuVolume();
 
 void mlLitro();
 
@@ -13,6 +13,8 @@ void lHectolitro();
 
 void hlMililitro();
 
-void hlLitro()
+void hlLitro();
+
+int volumeConverter();
 
 #endif
