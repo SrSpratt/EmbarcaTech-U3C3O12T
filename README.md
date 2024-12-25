@@ -6,7 +6,11 @@
 * Hilquias Rodigues de Oliveira
 * Marcel Mascarenhas Andrade
 * Davi Nascimento Leao
+<<<<<<< Updated upstream
 * Fabrício da Silva Souza
+=======
+* Fabrício da Silva Souza 
+>>>>>>> Stashed changes
 
 
 #### Instruções de compilação
