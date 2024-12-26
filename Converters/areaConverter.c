@@ -25,46 +25,46 @@ void AreaConverter() {
             case 1:
                 printf("\n(1) Metro quadrado para Centimetro quadrado\n");
                 printf("Digite o valor que deseja converter: ");
-                if (scanf("%f", &valor) != 1) { 
+                if (scanf("%f", &v) != 1) { 
                     printf("Entrada negada. Tente novamente.\n");
                     while (getchar() != '\n'); 
                     continue;
                 }
-                resultado = valor * 10000;
-                printf("%.2f metros quadrados = %.2f centimetros quadrados\n", valor, resultado);
+                r = v * 10000;
+                printf("%.2f metros quadrados = %.2f centimetros quadrados\n", v, r);
                 break;
             case 2:
                 printf("\n(2) Hectare para Metro quadrado\n");
                 printf("Digite o valor que deseja converter: ");
-                if (scanf("%f", &valor) != 1) { 
+                if (scanf("%f", &v) != 1) { 
                     printf("Entrada negada. Tente novamente.\n");
                     while (getchar() != '\n'); 
                     continue;
                 }
-                resultado = valor * 10000;
-                printf("%.2f hectares = %.2f metros quadrados\n", valor, resultado);
+                r = v * 10000;
+                printf("%.2f hectares = %.2f metros quadrados\n", v, r);
                 break;
             case 3:
                 printf("\n(3) Acre para Metro quadrado\n");
                 printf("Digite o valor que deseja converter: ");
-                if (scanf("%f", &valor) != 1) { 
+                if (scanf("%f", &v) != 1) { 
                     printf("Entrada negada. Tente novamente.\n");
                     while (getchar() != '\n'); 
                     continue;
                 }
-                resultado = valor * 4046.86;
-                printf("%.2f acres = %.2f metros quadrados\n", valor, resultado);
+                r = v * 4046.86;
+                printf("%.2f acres = %.2f metros quadrados\n", v, r);
                 break;
             case 4:
                 printf("\n(4) Metro quadrado para Jarda²\n");
                 printf("Digite o valor que deseja converter: ");
-                if (scanf("%f", &valor) != 1) { 
+                if (scanf("%f", &v) != 1) { 
                     printf("Entrada negada. Tente novamente.\n");
                     while (getchar() != '\n'); 
                     continue;
                 }
-                resultado = valor * 1.196;
-                printf("%.2f metros quadradoss = %.2f jardas quadradas\n", valor, resultado);
+                r = v * 1.196;
+                printf("%.2f metros quadradoss = %.2f jardas quadradas\n", v, r);
                 break;
             case 0:
                 printf("Programa finalizado.\n");

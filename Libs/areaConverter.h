@@ -1,7 +1,7 @@
 #ifndef AREACONVERTER_H
 #define AREACONVERTER_H
 
-float valor, resultado;
+float v, r;
     
 void AreaConverter();
 
