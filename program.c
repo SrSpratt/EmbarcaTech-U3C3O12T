@@ -4,8 +4,6 @@
 #include <powerConverter.h>
 #include <lengthConverter.h>
 #include <timeConverter.h>
-#include <volumeConverter.c>
-#include <volumeConverter.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <speedConverter.h>
@@ -38,7 +36,6 @@ void GetMenu()
         printf("4. Conversão de Celsius para Kelvin\n");
         printf("6. Conversão de velocidade\n");
         printf("7. Conversao de tempo\n");
-        printf("9. Conversão de volume\n");
         printf("0. Sair\n");
 
         scanf("%d", &menuController);
@@ -69,15 +66,6 @@ void GetMenu()
         case 7:
             timeConverter();
             break;
-        case 9:{
-            volumeConverter();
-            break;
-        }
-        case 0:
-            printf("\nSaindo...\n");
-        default:
-            printf("\nOpção inválida, tente novamente.\n");
-        }
         case 0:
             printf("\nSaindo...\n");
         default:
