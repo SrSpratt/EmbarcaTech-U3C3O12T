@@ -35,6 +35,7 @@ void GetMenu()
         printf("2. Unidades de potência elétrica\n");
         printf("3. Conversão de Celsius para Fahrenheit\n");
         printf("4. Conversão de Celsius para Kelvin\n");
+        printf("5. Corversão de área\n");
         printf("7. Conversao de tempo\n");
         printf("8. Unidades de armazenamento de dados\n");
         printf("0. Sair\n");
