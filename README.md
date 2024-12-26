@@ -8,6 +8,7 @@
 * Davi Nascimento Leao
 * Tainah Bomfim Marques
 * Kaique Rangel Da Silva
+* Gabriel Rocha Prado Martins
 
 
 #### Instruções de compilação

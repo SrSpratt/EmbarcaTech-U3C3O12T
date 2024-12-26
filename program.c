@@ -3,6 +3,7 @@
 #include <temperatureConverter.h>
 #include <powerConverter.h>
 #include <lengthConverter.h>
+#include <sizeConverter.h>
 #include <timeConverter.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -36,6 +37,7 @@ void GetMenu()
         printf("4. Conversão de Celsius para Kelvin\n");
         printf("6. Conversão de velocidade\n");
         printf("7. Conversao de tempo\n");
+        printf("8. Unidades de armazenamento de dados\n");
         printf("0. Sair\n");
 
         scanf("%d", &menuController);
@@ -65,6 +67,9 @@ void GetMenu()
             break;
         case 7:
             timeConverter();
+            break;
+        case 8:
+            SizeConverter();
             break;
         case 0:
             printf("\nSaindo...\n");
