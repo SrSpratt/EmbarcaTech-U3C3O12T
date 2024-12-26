@@ -9,7 +9,7 @@
             "command": "powershell",
             "args": [
                 "-Command",
-                "if (-Not (Test-Path '/debug')) { New-Item -ItemType Directory -Path '/debug' }"
+                "if (-Not (Test-Path 'debug')) { New-Item -ItemType Directory -Path 'debug' }"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -55,7 +55,7 @@
             "command": "powershell",
             "args": [
                 "-Command",
-                "if (-Not (Test-Path '/build')) { New-Item -ItemType Directory -Path '/build' }"
+                "if (-Not (Test-Path 'build')) { New-Item -ItemType Directory -Path 'build' }"
             ],
             "problemMatcher": [],
             "options": {
@@ -73,7 +73,7 @@
             "args": [
                 "-Wall",
                 "-I",
-                "Libs",
+                "Libs/",
                 "Converters/*.c",
                 "Models/*.c",
                 "*.c",
