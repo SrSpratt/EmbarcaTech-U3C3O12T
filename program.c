@@ -71,6 +71,12 @@ void GetMenu()
             break;
         case 9:{
             volumeConverter();
+            break;
+        }
+        case 0:
+            printf("\nSaindo...\n");
+        default:
+            printf("\nOpção inválida, tente novamente.\n");
         }
         case 0:
             printf("\nSaindo...\n");

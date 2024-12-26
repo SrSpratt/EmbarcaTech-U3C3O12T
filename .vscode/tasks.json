@@ -4,55 +4,110 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Create Debug Directory",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "if (-Not (Test-Path '/debug')) { New-Item -ItemType Directory -Path '/debug' }"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
             "label": "CompileTest",
             "type": "cppbuild",
-            "command": "C:/TDM-GCC-64/bin/gcc.exe",
-            "args":[
+            "command": "gcc",
+            "args": [
                 "-Wall",
                 "-O0",
                 "-I",
-                "${fileDirname}/Libs",
+                "Libs",
                 "-g3",
-                "${fileDirname}/Converters/*.c",
-                "${fileDirname}/Models/*.c",
-                "${fileDirname}/*.c",
+                "Converters/*.c",
+                "Models/*.c",
+                "*.c",
                 "-o",
-                "${fileDirname}/debug/program.exe"
+                "${workspaceFolder}/debug/program.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
-            "group":{
+            "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher":[
+            "problemMatcher": [
                 "$gcc"
+            ],
+            "dependsOn": [
+                "Create Debug Directory"
             ]
         },
         {
+            "label": "Create Build Directory",
+            "type": "shell",
+            "command": "powershell",
+            "args": [
+                "-Command",
+                "if (-Not (Test-Path '/build')) { New-Item -ItemType Directory -Path '/build' }"
+            ],
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
             "label": "Compile",
-            "type": "cppbuild",
-            "command": "C:/TDM-GCC-64/bin/gcc.exe",
-            "args":[
+            "type": "shell",
+            "command": "gcc",
+            "args": [
                 "-Wall",
                 "-I",
-                "${fileDirname}/Libs",
-                "${fileDirname}/Converters/*.c",
-                "${fileDirname}/Models/*.c",
-                "${fileDirname}/*.c",
+                "Libs",
+                "Converters/*.c",
+                "Models/*.c",
+                "*.c",
                 "-o",
-                "${fileDirname}/build/program.exe"
+                "${workspaceFolder}/build/program.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
-            "group":{
+            "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher":[
+            "problemMatcher": [
                 "$gcc"
+            ],
+            "dependsOn": [
+                "Create Build Directory"
+            ]
+        },
+        {
+            "label": "Compile&Run",
+            "type": "shell",
+            "command": "build/program.exe",
+            "args": [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn": [
+                "Compile"
             ]
         }
     ]
