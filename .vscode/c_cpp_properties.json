@@ -4,7 +4,8 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/Libs"
+                "${workspaceFolder}/Libs",
+                "${workspaceFolder}/Converters"
             ],
             "defines": [
                 "_DEBUG",
