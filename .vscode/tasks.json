@@ -10,13 +10,13 @@
             "command": "powershell",
             "args": [
                 "-Command",
-                "if (-Not (Test-Path '/debug')) { New-Item -ItemType Directory -Path '/debug' }"
+                "if (-Not (Test-Path 'debug')) { New-Item -ItemType Directory -Path 'debug' }"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
             },
             "group": {
-                "kind": "build",
+                "kind": "none",
                 "isDefault": false
             }
         },
@@ -40,7 +40,7 @@
                 "cwd": "${workspaceFolder}"
             },
             "group": {
-                "kind": "build",
+                "kind": "test",
                 "isDefault": true
             },
             "problemMatcher": [
@@ -56,14 +56,14 @@
             "command": "powershell",
             "args": [
                 "-Command",
-                "if (-Not (Test-Path '/build')) { New-Item -ItemType Directory -Path '/build' }"
+                "if (-Not (Test-Path 'build')) { New-Item -ItemType Directory -Path 'build' }"
             ],
             "problemMatcher": [],
             "options": {
                 "cwd": "${workspaceFolder}"
             },
             "group": {
-                "kind": "build",
+                "kind": "none",
                 "isDefault": false
             }
         },

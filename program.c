@@ -21,7 +21,7 @@ void GetHeader()
 
 void GetFooter()
 {
-    printf("\nAté mais...\n\n");
+    printf("\nAte mais...\n\n");
 }
 
 void GetMenu()
@@ -32,16 +32,16 @@ void GetMenu()
 
     do
     {
-        printf("\nEscolha uma opção de conversão:\n");
+        printf("\nEscolha uma opcao de conversao:\n");
         printf("1. Unidades de comprimento\n");
-        printf("2. Unidades de potência elétrica\n");
-        printf("3. Conversão de Celsius para Fahrenheit\n");
-        printf("4. Conversão de Celsius para Kelvin\n");
-        printf("5. Conversor de área\n");
-        printf("6. Conversão de velocidade\n");
-        printf("7. Conversao de tempo\n");
-        printf("8. Unidades de armazenamento de dados\n");
-        printf("9 - Conversão de volume\n");
+        printf("2. Unidades de potencia eletrica\n");
+        printf("3. Conversao de Celsius para Fahrenheit\n");
+        printf("4. Conversao de Celsius para Kelvin\n");
+        printf("5. Conversor de Area\n");
+        printf("6. Conversao de Velocidade\n");
+        printf("7. Conversao de Tempo\n");
+        printf("8. Unidades de Armazenamento de dados\n");
+        printf("9. Conversao de Volume\n");
         printf("0. Sair\n");
 
         scanf("%d", &menuController);
@@ -81,8 +81,9 @@ void GetMenu()
             break;
         case 0:
             printf("\nSaindo...\n");
+            break;
         default:
-            printf("\nOpção inválida, tente novamente.\n");
+            printf("\nOpcaoo invalida, tente novamente.\n");
         }
     } while (menuController != 0);
 }
