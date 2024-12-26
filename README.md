@@ -9,6 +9,7 @@
 * Tainah Bomfim Marques
 * Kaique Rangel Da Silva
 * Gabriel Rocha Prado Martins
+* Fabrício da Silva Souza
 
 
 #### Instruções de compilação
