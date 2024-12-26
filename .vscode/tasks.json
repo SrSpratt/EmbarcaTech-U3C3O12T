@@ -7,7 +7,7 @@
             "label": "Create Debug Directory",
             "type": "shell",
             "command": "powershell",
-            "args":[
+            "args": [
                 "-Command",
                 "if (-Not (Test-Path '/debug')) { New-Item -ItemType Directory -Path '/debug' }"
             ],
@@ -23,7 +23,7 @@
             "label": "CompileTest",
             "type": "cppbuild",
             "command": "gcc",
-            "args":[
+            "args": [
                 "-Wall",
                 "-O0",
                 "-I",
@@ -38,14 +38,14 @@
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "group":{
+            "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher":[
+            "problemMatcher": [
                 "$gcc"
             ],
-            "dependsOn":[
+            "dependsOn": [
                 "Create Debug Directory"
             ]
         },
@@ -70,7 +70,7 @@
             "label": "Compile",
             "type": "shell",
             "command": "gcc",
-            "args":[
+            "args": [
                 "-Wall",
                 "-I",
                 "Libs",
@@ -83,14 +83,14 @@
             "options": {
                 "cwd": "${workspaceFolder}"
             },
-            "group":{
+            "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher":[
+            "problemMatcher": [
                 "$gcc"
             ],
-            "dependsOn":[
+            "dependsOn": [
                 "Create Build Directory"
             ]
         },
@@ -99,14 +99,14 @@
             "type": "shell",
             "command": "build/program.exe",
             "args": [],
-            "options":{
+            "options": {
                 "cwd": "${workspaceFolder}"
             },
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "dependsOn":[
+            "dependsOn": [
                 "Compile"
             ]
         }
