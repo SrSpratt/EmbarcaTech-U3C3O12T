@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <speedConverter.h>
+#include <areaConverter.h>
 
 void GetHeader()
 {
@@ -36,6 +37,7 @@ void GetMenu()
         printf("2. Unidades de potência elétrica\n");
         printf("3. Conversão de Celsius para Fahrenheit\n");
         printf("4. Conversão de Celsius para Kelvin\n");
+        printf("5. Conversor de área\n");
         printf("6. Conversão de velocidade\n");
         printf("7. Conversao de tempo\n");
         printf("8. Unidades de armazenamento de dados\n");
@@ -63,6 +65,7 @@ void GetMenu()
             printf("Temperatura em Kelvin: %lf\n", CelsiusToKelvin(inputTemp));
             break;
         case 5:
+            AreaConverter();
             break;
         case 6:
             speedConverter();
