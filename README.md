@@ -7,6 +7,7 @@
 * Marcel Mascarenhas Andrade
 * Davi Nascimento Leao
 * Tainah Bomfim Marques
+* Kaique Rangel Da Silva
 
 
 #### Instruções de compilação
