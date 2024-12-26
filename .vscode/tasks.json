@@ -6,7 +6,7 @@
         {
             "label": "CompileTest",
             "type": "cppbuild",
-            "command": "gcc",
+            "command": "C:/TDM-GCC-64/bin/gcc.exe",
             "args":[
                 "-Wall",
                 "-O0",
@@ -33,7 +33,7 @@
         {
             "label": "Compile",
             "type": "cppbuild",
-            "command": "gcc",
+            "command": "C:/TDM-GCC-64/bin/gcc.exe",
             "args":[
                 "-Wall",
                 "-I",
