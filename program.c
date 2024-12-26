@@ -33,6 +33,7 @@ void GetMenu()
         printf("2. Unidades de potência elétrica\n");
         printf("3. Conversão de Celsius para Fahrenheit\n");
         printf("4. Conversão de Celsius para Kelvin\n");
+        printf("5. Coversão de área\n");
         printf("7. Conversao de tempo\n");
         printf("0. Sair\n");
 
@@ -57,6 +58,7 @@ void GetMenu()
             printf("Temperatura em Kelvin: %lf\n", CelsiusToKelvin(inputTemp));
             break;
         case 5:
+            areaCorverrter();
             break;
 
         case 7:

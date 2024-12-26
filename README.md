@@ -7,7 +7,7 @@
 * Marcel Mascarenhas Andrade
 * Davi Nascimento Leao
 * Tainah Bomfim Marques
-
+* Luis Felipe Barbosa da Silva
 
 #### Instruções de compilação
 Para compilar:
