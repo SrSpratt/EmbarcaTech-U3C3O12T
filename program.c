@@ -3,9 +3,11 @@
 #include <temperatureConverter.h>
 #include <powerConverter.h>
 #include <lengthConverter.h>
+#include <sizeConverter.h>
 #include <timeConverter.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <speedConverter.h>
 
 void GetHeader()
 {
@@ -24,7 +26,7 @@ void GetMenu()
 {
     int menuController; // Controlador do menu
     double inputTemp;
-    CObject object;
+    //CObject object;
 
     do
     {
@@ -33,8 +35,8 @@ void GetMenu()
         printf("2. Unidades de potência elétrica\n");
         printf("3. Conversão de Celsius para Fahrenheit\n");
         printf("4. Conversão de Celsius para Kelvin\n");
-        printf("5. Coversão de área\n");
         printf("7. Conversao de tempo\n");
+        printf("8. Unidades de armazenamento de dados\n");
         printf("0. Sair\n");
 
         scanf("%d", &menuController);
@@ -60,9 +62,14 @@ void GetMenu()
         case 5:
             areaCorverrter();
             break;
-
+        case 6:
+            speedConverter();
+            break;
         case 7:
             timeConverter();
+            break;
+        case 8:
+            SizeConverter();
             break;
         case 0:
             printf("\nSaindo...\n");
