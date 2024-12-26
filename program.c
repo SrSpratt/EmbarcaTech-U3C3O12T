@@ -5,9 +5,11 @@
 #include <lengthConverter.h>
 #include <sizeConverter.h>
 #include <timeConverter.h>
+#include <volumeConverter.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <speedConverter.h>
+#include <areaConverter.h>
 
 void GetHeader()
 {
@@ -39,6 +41,7 @@ void GetMenu()
         printf("6. Conversão de velocidade\n");
         printf("7. Conversao de tempo\n");
         printf("8. Unidades de armazenamento de dados\n");
+        printf("9 - Conversão de volume\n");
         printf("0. Sair\n");
 
         scanf("%d", &menuController);
@@ -62,7 +65,7 @@ void GetMenu()
             printf("Temperatura em Kelvin: %lf\n", CelsiusToKelvin(inputTemp));
             break;
         case 5:
-            areaConverter();
+            AreaConverter();
             break;
         case 6:
             speedConverter();
@@ -72,6 +75,9 @@ void GetMenu()
             break;
         case 8:
             SizeConverter();
+            break;
+        case 9:
+            volumeConverter();
             break;
         case 0:
             printf("\nSaindo...\n");

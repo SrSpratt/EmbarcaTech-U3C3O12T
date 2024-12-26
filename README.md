@@ -10,6 +10,8 @@
 * Kaique Rangel Da Silva
 * Gabriel Rocha Prado Martins
 * Luis Felipe Barbosa da Silva
+* Fabrício da Silva Souza
+
 
 #### Instruções de compilação
 Para compilar:
