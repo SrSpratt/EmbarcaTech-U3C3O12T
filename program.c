@@ -3,6 +3,7 @@
 #include <temperatureConverter.h>
 #include <powerConverter.h>
 #include <lengthConverter.h>
+#include <sizeConverter.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -20,7 +21,7 @@ void GetFooter(){
 void GetMenu(){
     int menuController; //Controlador do menu
     double inputTemp;
-    CObject object;
+    //CObject object;
 
     do {
         printf("\nEscolha uma opção de conversão:\n");
@@ -28,6 +29,7 @@ void GetMenu(){
         printf("2. Unidades de potência elétrica\n");
         printf("3. Conversão de Celsius para Fahrenheit\n");
         printf("4. Conversão de Celsius para Kelvin\n");
+        printf("8. Unidades de armazenamento de dados\n");
         printf("0. Sair\n");
 
         scanf("%d", &menuController);
@@ -50,6 +52,9 @@ void GetMenu(){
                 printf("Temperatura em Kelvin: %lf\n", CelsiusToKelvin(inputTemp));
                 break;
             case 5:
+                break;
+            case 8:
+                SizeConverter();
                 break;
             case 0:
                 printf("\nSaindo...\n");
